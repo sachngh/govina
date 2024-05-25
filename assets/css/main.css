@@ -24,13 +24,38 @@ html,body{
   background-color: #59b35c;
 }
 .text-muted{
-  text-align: center;
+  text-align: justify;
+  font-weight: 400;
+  color: #000 !important;
+}
+h1{
+  /* color: #fff; */
+  font-weight: 700;
 }
 h5{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     font-size: 2em !important;
     font-weight: 700 !important;
     color: black;
+}
+h6{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: #59b35c;
+  color: white;
+  width: 50%;
+  font-size: 3em;
+  margin: auto;
+  text-transform: uppercase;
+}
+.carousel-control-next-icon {
+  background-color: #59b35c;
+  padding:35px;
+}
+.carousel-control-prev-icon {
+  background-color: #59b35c;
+  padding:35px;
 }
 .vv img{
     transition:all 0.3s ease;
@@ -47,6 +72,7 @@ h5{
         font-size: 30px;
         font-family:Audiowide;
         font-weight: 700;
+        text-transform: uppercase;
       }
       .img-area{
         width: 100%;
@@ -73,7 +99,7 @@ h5{
         right: 0;
         background-color: #59b35c;
         overflow: hidden;
-        width: 100%;
+        width: 50%;
         height: 0;
         transition: .5s ease;
       }
@@ -344,7 +370,17 @@ h5{
       color: #fff;
       text-decoration: none;
     }
-   
+    .reveal{
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: 1s all ease;
+    }
+    
+    .reveal.active{
+      transform: translateY(0);
+      opacity: 1;
+    }
       
       
       

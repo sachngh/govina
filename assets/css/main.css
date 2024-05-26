@@ -27,8 +27,8 @@ html,body{
   background-color: #59b35c;
 }
 .our_services{
-  width: 250px !important;
-  height: 250px !important;
+  width: 250px;
+  height: 250px ;
 }
 .text-muted{
   text-align: justify;
